@@ -181,5 +181,33 @@ export const projects = [
         desc: 'System performance is evaluated using accuracy, precision, recall, F1-score, and a confusion matrix. The modular pipeline design separates preprocessing, feature extraction, API inference, and result rendering — making each component independently testable and extensible.'
       }
     ]
+  },
+  {
+    id: 'speech-emotion-detection',
+    title: 'Speech Emotion Detection using Deep Learning',
+    shortDesc: 'Built a Speech Emotion Detection system using Deep Learning and LSTM networks to recognize emotions from speech audio. The project uses MFCC feature extraction and a trained neural network model to classify 8 emotions with real-time inference support through a Gradio web interface.',
+    coverImage: '/images/projects/speech-emotion/cover.png',
+    imageFit: 'cover',
+    icon: 'fa-microphone-alt',
+    tech: ['Python', 'TensorFlow', 'Keras', 'Librosa', 'NumPy', 'Scikit-learn', 'Gradio', 'Matplotlib', 'Seaborn'],
+    overview: 'An AI-powered emotion recognition system that detects human emotions from speech audio using MFCC feature extraction and LSTM neural networks. The system processes the RAVDESS Speech Emotion Dataset containing 1440 audio samples to classify 8 different human emotions: Angry, Calm, Disgust, Fearful, Happy, Neutral, Sad, and Surprised.',
+    features: [
+      {
+        title: 'Deep Learning Architecture',
+        desc: 'Built a 2-layer LSTM architecture for sequential audio analysis including a Masking Layer, 128-unit and 64-unit LSTM layers, Dense layers with Dropout and Batch Normalization, and a Softmax output layer.'
+      },
+      {
+        title: 'Audio Feature Extraction',
+        desc: 'Used MFCC (Mel-Frequency Cepstral Coefficients) to extract (200, 40) input shape features from the audio for the model to process.'
+      },
+      {
+        title: 'Interactive Web Interface',
+        desc: 'Created an interactive Gradio web application for live testing and visualization, allowing real-time emotion prediction from uploaded .wav audio files.'
+      },
+      {
+        title: 'Performance & Evaluation',
+        desc: 'Achieved 61.57% validation/test accuracy using EarlyStopping, ReduceLROnPlateau, ModelCheckpoint, and balanced class weighting. Included confidence score visualization and confusion matrix charts.'
+      }
+    ]
   }
 ];
