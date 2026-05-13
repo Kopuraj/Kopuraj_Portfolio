@@ -106,6 +106,7 @@ export const projects = [
     coverImage: '/images/projects/tictactoe/Gemini_Generated_Image_i0lqmzi0lqmzi0lq.png',
     imageFit: 'contain',
     video: '/images/projects/tictactoe/20260501-1542-57.0419910.mp4',
+    videoTitle: 'Gameplay Demonstration',
     icon: 'fa-gamepad',
     tech: ['Java', 'TCP Sockets', 'Networking'],
     overview: 'A Java-based server-client implementation of the classic Tic-Tac-Toe game. It enables two players to connect from separate machines over the same network (like a shared Wi-Fi) using Socket programming. Players take turns marking a 3x3 grid with their respective signs (Cross and Circle). The server maintains the game state and evaluates the winner when a player aligns three signs consecutively. Once the game is over, it restarts automatically for a new round.',
@@ -149,6 +150,35 @@ export const projects = [
       {
         title: 'Architecture Flow',
         desc: 'The system follows a simple scheduler architecture: User Input → Task Stored → Scheduler Running → Time Match → Task Executed.'
+      }
+    ]
+  },
+  {
+    id: 'skin-cancer-detection',
+    title: 'Skin Cancer Detection',
+    shortDesc: 'A hybrid AI system combining classical OpenCV image processing with a cloud-hosted deep learning model via Hugging Face API to analyze dermoscopic images for skin cancer detection.',
+    coverImage: '/images/projects/skin-cancer/cover.png',
+    imageFit: 'cover',
+    video: '/images/projects/skin-cancer/demo.mp4',
+    icon: 'fa-microscope',
+    tech: ['Python', 'OpenCV', 'Hugging Face API', 'HAM10000', 'ISIC Dataset', 'Scikit-learn', 'NumPy', 'Matplotlib'],
+    overview: 'This project implements a modular hybrid skin cancer detection pipeline that integrates classical computer vision techniques with a cloud-hosted convolutional neural network. Dermoscopic images from the HAM10000 and ISIC datasets are processed locally using OpenCV — applying median and Gaussian filtering, Otsu thresholding, morphological operations, and edge detection — before being forwarded to a pre-trained CNN model hosted on Hugging Face for lesion classification. The system is designed to demonstrate how traditional image processing can enhance AI-based medical diagnosis in a resource-efficient and modular architecture.',
+    features: [
+      {
+        title: 'Local Image Preprocessing with OpenCV',
+        desc: 'A multi-stage preprocessing pipeline processes each dermoscopic image locally. Median filtering removes hair artifacts, Gaussian filtering suppresses background noise, and morphological operations refine lesion boundaries. Otsu thresholding performs automatic lesion segmentation without manual tuning.'
+      },
+      {
+        title: 'ABCD Feature Extraction via Edge Detection',
+        desc: 'Canny and Sobel edge detection operators are applied to extract clinically relevant ABCD features — Asymmetry, Border irregularity, Color variation, and Diameter — from the segmented lesion region, providing structured visual descriptors for classification.'
+      },
+      {
+        title: 'Cloud-Based CNN Classification via Hugging Face API',
+        desc: 'Preprocessed lesion images are submitted to a cloud-hosted CNN model through the Hugging Face Inference API. The model, trained on large-scale dermoscopy datasets (HAM10000 / ISIC), returns classification probabilities for skin lesion types, enabling accurate prediction without requiring local GPU resources.'
+      },
+      {
+        title: 'Evaluation & Modular Architecture',
+        desc: 'System performance is evaluated using accuracy, precision, recall, F1-score, and a confusion matrix. The modular pipeline design separates preprocessing, feature extraction, API inference, and result rendering — making each component independently testable and extensible.'
       }
     ]
   }

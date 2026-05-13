@@ -44,8 +44,8 @@ export default function ProjectDetail() {
       {project.video && (
         <div style={{ marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center' }}>
-            <i className="fas fa-play-circle" style={{ marginRight: '0.5rem', color: 'var(--accent-cyan)' }}></i> 
-            Gameplay Demonstration
+            <i className="fas fa-play-circle" style={{ marginRight: '0.5rem', color: 'var(--accent-cyan)' }}></i>
+            {project.videoTitle || 'Demo Video'}
           </h2>
           <div style={{ 
             width: '100%', 
