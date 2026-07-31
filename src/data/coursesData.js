@@ -13,7 +13,7 @@ export const courseCategoriesData = [
         id: 'ceh',
         title: 'Certified Ethical Hacker (CEH)',
         issuer: 'EC-Council',
-        date: '2025',
+        date: '2026',
         image: '/images/Courses/Cybersecurity/Certified Ethical Hacker(CEH).png',
         description: 'Comprehensive training in ethical hacking methodologies, vulnerability assessment, penetration testing, and countermeasure implementation.'
       },
@@ -21,7 +21,7 @@ export const courseCategoriesData = [
         id: 'iam',
         title: 'Identity and Access Management (IAM)',
         issuer: 'Cybersecurity Specialization',
-        date: '2025',
+        date: '2026',
         image: '/images/Courses/Cybersecurity/1.Identity and Access Management (IAM).png',
         description: 'Foundational principles of digital identity, user authentication, role-based access control (RBAC), and enterprise authorization protocols.'
       }
@@ -41,7 +41,7 @@ export const courseCategoriesData = [
         id: 'packet-tracer',
         title: 'Getting Started with Cisco Packet Tracer',
         issuer: 'Cisco Networking Academy',
-        date: '2025',
+        date: '2026',
         image: '/images/Courses/Networking/1.Getting Started with Cisco Packet Tracer.png',
         description: 'Hands-on network configuration, topological simulation, routing protocols, and device troubleshooting in Cisco Packet Tracer.'
       },
