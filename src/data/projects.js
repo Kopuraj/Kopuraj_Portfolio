@@ -1,5 +1,35 @@
 export const projects = [
   {
+    id: 'technova-business-management',
+    title: 'TechNova - Business Management System',
+    shortDesc: 'A sample business management system with core modules for managing employees, clients, projects, authentication, and RBAC.',
+    coverImage: '/images/projects/technova/Dashboard_image.png',
+    imageFit: 'contain',
+    video: '/images/projects/technova/Project_demo.mp4',
+    videoTitle: 'TechNova System Demo',
+    icon: 'fa-briefcase',
+    tech: ['React', 'Material UI', 'Java', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'MySQL', 'JWT', 'Maven'],
+    overview: 'TechNova is a sample business management system developed to demonstrate my understanding of real-world business application workflows. It includes core modules for managing employees, clients, and projects, along with a dashboard, authentication, and role-based access control. I built it as a portfolio project to show my practical knowledge of full-stack development and business system design, rather than as a large-scale production system.',
+    features: [
+      {
+        title: 'Employee & Client Management',
+        desc: 'Core business modules designed for managing employee profiles, roles, and maintaining comprehensive client relationship records.'
+      },
+      {
+        title: 'Project Tracking & Analytics Dashboard',
+        desc: 'Interactive visual dashboard providing insight into active project statuses, operational metrics, and client deliverables.'
+      },
+      {
+        title: 'Authentication & Role-Based Access Control (RBAC)',
+        desc: 'Secure JWT-based authentication paired with Spring Security to enforce permission levels across administrator, manager, and employee roles.'
+      },
+      {
+        title: 'Full-Stack Architecture',
+        desc: 'Built using React and Material UI for a responsive UI, powered by Java, Spring Boot, Spring Data JPA, MySQL, and Maven on the backend.'
+      }
+    ]
+  },
+  {
     id: 'sem-tracker',
     title: 'SEM-Tracker',
     shortDesc: 'Web application for students to track semester progress, attendance, and assessment grades.',
